@@ -33,7 +33,7 @@ Below are some resources that I found extremely helpful in learning and maximizi
 [Daring Fireball](http://daringfireball.net/projects/markdown/syntax "markdown syntax")
 : Markdown syntax reference written by John Gruber, creator of Markdown.
 
-[Kramdown Quick Reference](http://kramdown.gettalong.org/quickref.html “kramdown quick reference") 
+[Kramdown Quick Reference](http://kramdown.gettalong.org/quickref.html "kramdown quick reference") 
 : Quick reference guide for Kramdown, Jekyll’s current default Markdown rendering engine. Features code examples and description of common formatting tasks.  
 
 
