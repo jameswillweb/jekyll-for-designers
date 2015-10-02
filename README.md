@@ -4,6 +4,6 @@ Hey folks! Welcome to the companion repo of the [lynda.com](http://www.lynda.com
 
 I designed the blog as a teaching tool first and foremost, but it is designed to be simple, clean, and responsive. I used [HTML5 Boilerplate](https://html5boilerplate.com/ "html5 boilerplate") and [Normalize.css](http://necolas.github.io/normalize.css/ "normalize.css") as my starting points and narrowed them down to what I considered to be the essentials. The menu is manually generated but is responsive and built on pure CSS. The HTML focuses on semantics and is built with accessibility in mind. The CSS is not based on any framework, and only contains what the blog needs, there are no layout grids or extra UI classes. SASS is used only for code syntax highlighting, and can be stripped out easily as it is imported into the main.css file. The file links to a custom [Modernizr](http://modernizr.com/ "modernizr") library that isn't used in the final build but is available if you need it. I recommend replacing it with the Modernizr build of your choice. The entire blog was built to be customized as you wish, and not force you into any conventions or frameworks. Feel free to clone this repo and experiment and reuse the blog as you see fit, but please respect the license. No use without attribution and no commercial resale. The exercise files are under copyright for lynda.com and should only be used for personal use.
 
-Thanks, and if you find it useful give me a shout on [Twitter!](http://www.twitter.com/jameswillweb "my twitter profile")
+Thanks, if you find any problems or errors open an issue and I'll fix them as soon as I can. If you find it useful give me a shout on [Twitter!](http://www.twitter.com/jameswillweb "my twitter profile")
 
-- James
+&emdash; James
