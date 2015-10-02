@@ -6,4 +6,4 @@ I designed the blog as a teaching tool first and foremost, but it is designed to
 
 Thanks, if you find any problems or errors open an issue and I'll fix them as soon as I can. If you find it useful give me a shout on [Twitter!](http://www.twitter.com/jameswillweb "my twitter profile")
 
-&emdash; James
+&mdash; James
