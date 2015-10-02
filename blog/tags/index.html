@@ -1,0 +1,36 @@
+---
+layout: default
+title: Post Archives
+---
+
+<main role="main" class="cf">
+<article class="archive">
+ <article role="article">
+        <header>
+            <h2 id="top">{{page.title}}</h2>
+             <ul class="tag-cloud">
+             {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign sortedTags = site_tags | split:',' | sort %}
+ 				
+                {% for tag in sortedTags %}
+                    <li><a href="#{{ tag | cgi_escape }}">{{ tag }} [{{ site.tags[tag].size }}]</a></li>
+                {% endfor %}
+            </ul>
+        </header>
+{% for tag in sortedTags %}
+  <h3 id="{{ tag | cgi_escape }}">{{ tag }}</h3>
+  <ul class="taglist">
+  {% for post in site.tags[tag] %}
+    <li>
+          <time itemprop="dateCreated" datetime="{{post.date}}">
+                {{ post.date | date: "%b %d, %Y" }}</time> | <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+                {{post.title}}</a>
+    </li>
+  {% endfor %}
+   <li class="return"><a href="#top" title="return to top">return to top</a></li>
+  </ul>
+{% endfor %}
+    </article>
+    </article>
+        {% include sidebar-short.html %}
+</main>

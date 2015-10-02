@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<main role="main" class="cf">
+  <article class="posts"> {% for post in paginator.posts limit:4 %}
+    <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+        <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </header>
+      <p>{{ post.excerpt | strip_html }} <a href="{{site.baseurl}}{{ post.url }}" title="read more" class="more">Read more</a></p>
+      <footer>
+        <p>Posted in <a href="category-url" >jekyll</a>, <a href="category-url" >javascript</a>, <a href="category-url" >html</a></p>
+      </footer>
+    </article>
+    {% endfor %}
+    <div class="pagination"> 
+    {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <p class="prevLink"><a href="{{site.baseurl}}/" class="previous">newer entries</a></p>
+      {% else %}
+      <p class="prevLink"><a href="{{ site.baseurl }}/blog/page{{ paginator.previous_page }}" class="previous">newer entries</a></p>
+      {% endif %}
+      {% endif %}
+      {% if paginator.next_page %}
+      <p class="nextLink"><a href="{{ site.baseurl }}/blog/page{{ paginator.next_page }}" class="next">older entries</a></p>
+      {% endif %}
+      </div>
+  </article>
+  {% include sidebar.html %} </main>

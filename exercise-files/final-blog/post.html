@@ -1,0 +1,29 @@
+---
+layout: default
+page-type: post
+---
+<main role="main" class="cf">
+<article class="posts">
+ <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+        <header>
+            <h2>{{page.title}}</h2>
+            <time itemprop="dateCreated" datetime="{{page.date}}">
+                {{ page.date | date: "%B %-d, %Y" }}</time>
+        </header>
+        {{content}}
+        <footer>
+        <p>Posted in {% for tag in page.tags %}<a href="{{ site.baseurl }}/tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+        </footer>
+    </article>
+    <section class="post-links">
+    <p>Read more:</p>
+  {% if page.previous.url %}
+    <p class="prevLink"><a class="previous" href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></p>
+  {% endif %}
+  {% if page.next.url %}
+    <p class="nextLink"><a class="next" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></p>
+  {% endif %}
+	</section>
+    </article>
+        {% include sidebar.html %}
+</main>

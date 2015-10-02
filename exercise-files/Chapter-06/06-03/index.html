@@ -1,0 +1,22 @@
+<main role="main" class="cf">
+<article class="archive">
+ <article role="article">
+        <header>
+            <h2 id="top">Page Title</h2>
+             <ul class="tag-cloud">
+                    <li><a href="#jump-to-tag">tag name</a></li>
+            </ul>
+        </header>
+  <h3 id="tag-name">Tag name</h3>
+  <ul class="taglist">
+    <li>
+          <time itemprop="dateCreated" datetime="{{post.date}}">
+                {{ post.date | date: "%b %d, %Y" }}</time> | <a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
+                {{post.title}}</a>
+    </li>
+   <li class="return"><a href="#top" title="return to top">return to top</a></li>
+  </ul>
+    </article>
+    </article>
+        <!-- sidebar goes here -->
+</main>

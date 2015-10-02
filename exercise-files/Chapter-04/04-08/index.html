@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<main role="main" class="cf">
+  <article class="posts"> {% for post in paginator.posts limit:4 %}
+    <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+        <time itemprop="dateCreated" datetime="{{post.date}}">{{ post.date | date: "%B %-d, %Y" }}</time>
+      </header>
+      <p>{{ post.excerpt | strip_html }} <a href="{{site.baseurl}}{{ post.url }}" title="read more" class="more">Read more</a></p>
+      <footer>
+        <p>Posted in <a href="category-url" >jekyll</a>, <a href="category-url" >javascript</a>, <a href="category-url" >html</a></p>
+      </footer>
+    </article>
+    {% endfor %}
+    <div class="pagination"> 
+      <p class="prevLink"><a href="previous link" class="previous">newer entries</a></p>
+      <p class="nextLink"><a href="next link" class="next">older entries</a></p>
+      </div>
+  </article>
+  {% include sidebar.html %} </main>
