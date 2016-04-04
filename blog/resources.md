@@ -19,7 +19,7 @@ Below are some resources that I found extremely helpful in learning and maximizi
 [Alphabetizing Jekyll Tags](http://blog.lanyonm.org/articles/2013/11/21/alphabetize-jekyll-page-tags-pure-liquid.html "Alphabetizing Jekyll Tags")
 : Great article on organizing and sorting tags for archive pages by Michael Lanyon. I used his approach for this blog.
 
-[How to Create Data-Driven Navigation](http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll/ "http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll/")
+[How to Create Data-Driven Navigation](http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll "http://www.tournemille.com/blog/How-to-create-data-driven-navigation-in-Jekyll")
 : Blog post by Dale Tournemille on creating dynamic menus in Jekyll through the use of a data file.
 
 [Jekyll Dynamic Menus](http://jnvsor.github.io/jekyll-dynamic-menu/about/ "Jekyll Dynamic Menus")
