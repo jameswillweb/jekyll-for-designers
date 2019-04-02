@@ -69,7 +69,7 @@ Renders as:
 
 ###Headings
 
-There are multiple ways to format headings in Kramdown. The easiest is to preceed the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`. 
+There are multiple ways to format headings in Kramdown. The easiest is to precede the heading with hash characters (**#**) equal to the heading level. An `h1` for example, would be written as `#heading 1`. 
 
 ~~~~~~~
 # This is a heading 1
